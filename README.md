@@ -33,6 +33,8 @@ This repository will hold the tools and scripts I personally use for my own setu
 
 * Kexts - The kext fils I use along with the scripts for installing them directly to the system (/Library/Extensions). You have your normal clover kext folder along with the required system kexts in place. Just run the script to install.
 
+* maciASL Patches - Different patches for maciASL (static patching DSDT)
+
 * Static Patching - My T450 Static patch method. This should only be used with T450s and may not work. The SSDTs are universal but you may have to patch your own DSDT to use. You can look over mine for reference. Especially in the battery section.
 
 * Utilities - Some binararies and other tools for use with the system. 
