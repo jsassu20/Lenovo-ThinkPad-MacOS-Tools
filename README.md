@@ -7,7 +7,7 @@ This repository will hold the tools and scripts I personally use for my own setu
 
 * Applications: Consists of different applications that I find to be useful for the hackintosh process after installing. The basically give you a good amount of options for solving different issues you may run into along with providing a number of usefull options for maintaining and keeping up on regular maintainence in order to keep your build running.
 
- Notable Applications:
+     Notable Applications:
      
 	 - Hackintool - Probably the most useful application next to clover configurator. Provides you with and unprecedented amount of control over your system as well as a number of tools for solving a wide range of issues you'll face along the way.
 	 
