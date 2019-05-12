@@ -1,4 +1,4 @@
-# Hackintosh-Tools
+# Lenovo-T450-Hackintosh-Tools
 
 This repository will hold the tools and scripts I personally use for my own setup but you're free to use as well. The applications that can be found here are not my creation nor do I take any sort of credit for the benefits they provide in the Hackintosh community. All credit for the abilities they provide should go directly to the creators of each app which can be found in the "About this app" section of the applications info.
 
