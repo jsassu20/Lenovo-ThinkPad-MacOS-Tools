@@ -1,6 +1,9 @@
-// Disable HPET devices
-// https://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/page-51#post-1834575
-
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)
+//
+// Clover UEFI Hotpatch | SSDT-HPET...
+//
+// This SSDT disables the HPET device in the DSDT.
+//
 DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-HPET", 0)
 {
     External(_SB.PCI0.LPC.HPET, DeviceObj)
@@ -10,3 +13,4 @@ DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-HPET", 0)
         Name (_STA, 0x0)
     }
 }
+//EOF

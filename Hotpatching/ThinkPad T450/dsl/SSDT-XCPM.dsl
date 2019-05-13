@@ -1,8 +1,10 @@
-// Clover UEFI Hotpatch | CPU Power Management | Lenovo ThinkPad T450 Ultrabook | Hackintosh (macOS Mojave) | Compiled By: Sass86oh |
-
-// Automatic CPU Power Management | Plugin Type One Injection |
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)...
 //
-DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-CPU", 0x00003000)
+// Clover UEFI Hotpatch | SSDT-XCPM...
+//
+// This Configuration Injects PLUGIN-TYPE = 1 for Dynamic CPU Power Management In Clover Configurator...
+//
+DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-XCPM", 0x00003000)
 {
     External (_PR_.CPU0, DeviceObj)    // (from opcode)
 

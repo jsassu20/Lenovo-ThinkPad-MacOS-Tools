@@ -1,10 +1,10 @@
-// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu) | May 2nd 2019...
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)
 //
 // Clover UEFI Hotpatch | Configuration For System Sound Functionality...
 //
 // Automatic Injection Of HDEF (System) & HDAU (HDMI) Layout Properties (System Audio Functionality) | Only Use Layout 28 | 1C000000 | Also Injects _DSM Info Under System Information...
 //
-DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-HDEF", 0)
+DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-AUDI0", 0)
 {
     External(_SB.PCI0.HDEF, DeviceObj)
     External(_SB.PCI0.HDAU, DeviceObj)

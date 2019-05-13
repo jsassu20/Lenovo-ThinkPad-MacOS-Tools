@@ -1,13 +1,11 @@
-// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu) | May 2nd 2019...
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)...
 //
-// Clover UEFI Hotpatch | EH01 & XHC _DSM Injection...
+// Clover UEFI Hotpatch | SSDT-USBX...
 //
 // This Configuration Injects The Proper _DSM Info For The EH01 & XHCI Controller...
 //
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-USBX", 0)
 {
-#endif
     External (_SB_.PCI0.EH01, DeviceObj)    // (from opcode)
     External (_SB_.PCI0.XHC, DeviceObj)    // (from opcode)
     External (DTGP, MethodObj)
@@ -55,7 +53,5 @@ DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-USBX", 0)
         DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
         Return (Local0)
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 //EOF

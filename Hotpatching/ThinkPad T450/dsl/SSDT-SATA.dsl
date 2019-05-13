@@ -1,71 +1,28 @@
-// Clover UEFI Hotpatch | SATA AHCI _DSM Injection | Lenovo ThinkPad T450 Ultrabook | Hackintosh (macOS Mojave) | Compiled By: Sass86oh |
-
-// This Configuration Injects The Proper _DSM Info For The AHCI Controller | Enables Intel Series 9 Chipset Recognition | Proper SATA Controller Functionality |
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)...
 //
-//DefinitionBlock ("", "SSDT", 2, "T450 ", "SATA", 0x00001000)
-//{
+// Clover UEFI Hotpatch | SSDT-SATA...
+//
+// This Configuration Injects The Proper _DSM Info For The SATA Controller | Enables Intel Series 9 Chipset Recognition | Proper SATA Controller Functionality...
+//
+DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-SATA", 0x001f0002)
+{
     External (_SB_.PCI0.SATA, DeviceObj)    // (from opcode)
-
+    External (DTGP, MethodObj)
+    
     Method (_SB.PCI0.SATA._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
     {
-        If (LEqual (Arg2, Zero))
-        {
-            Return (Buffer (One)
-            {
-                 0x03                                           
-            })
-        }
-
-        Return (Package (0x10)
-        {
-            "AAPL,slot-name", 
-            Buffer (0x09)
-            {
-                "Built In"
-            }, 
-
-            "name", 
-            Buffer (0x24)
-            {
-                "Apple Advanced SATA AHCI Controller"
-            }, 
-
-            "model", 
-            Buffer ()
-            {
-                "Intel Series 9 Chipset AHCI Controller, (Intel Broadwell Wildcat Point-LP AHCI Controller)"
-            }, 
-
-            "device_type", 
-            Buffer (0x10)
-            {
-                "AHCI Controller"
-            }, 
-
-            "device-id", 
-            Buffer (0x04)
-            {
-                 0x83, 0x9C, 0x00, 0x00                         
-            }, 
-
-            "vendor-id", 
-            Buffer (0x04)
-            {
-                 0x86, 0x80, 0x00, 0x00                         
-            }, 
-
-            "built-in", 
-            Buffer (One)
-            {
-                 0x00                                           
-            }, 
-
-            "compatible", 
-            Buffer (0x0D)
-            {
-                "pci8086,9c83"
-            }
-        })
+        Store (Package (0x0F) {
+            "AAPL,slot-name", Buffer() { "Built In" },
+            "name", Buffer() { "Intel 9 Series Chipset Family SATA Host Controller" }, 
+            "model", Buffer() { "Intel 9 Series Chipset Family SATA Host Controller (Intel Broadwell Wildcat Point-LP PCI Express AHCI Controller)" }, 
+            "device_type", Buffer() { "SATA Controller" }, 
+            "device-id", Buffer() { 0x83, 0x9C, 0x00, 0x00 }, 
+            "vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },  
+            "compatible", Buffer() { "pci8086,9c83" },
+            Buffer (One) {0x00}
+        }, Local0)
+        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+        Return (Local0)
     }
-//}
+}
 //EOF

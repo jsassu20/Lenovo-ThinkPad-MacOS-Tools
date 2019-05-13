@@ -1,6 +1,11 @@
-// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu) | May 2nd 2019...
+//
 // Clover UEFI Hotpatch | Battery Detection & Capacity Reporting...
-
+//
+// This Configuration Will Combine BAT1 and BAT2 Into BATC Which Allows For Proper Battery Functionality And Capacity Reporting...
+//
+// Requires RehabMan's ACPIBatteryManager.kext or SMCBatteryManager.kext (VirtualSMC Plugin) To Be Installed For Proper Functionality...
+//
 DefinitionBlock ("", "SSDT", 2, "LENOVO", "TP-BATT", 0)
 {
     External(_SB.PCI0.LPC.EC, DeviceObj)
