@@ -603,11 +603,46 @@
 		</dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device_type</key>
+				<string>Host Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell-U PCI Express Main Host Bridge OPI</string>
+				<key>name</key>
+				<string>MCHC</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
-				<key>#IOName</key>
+				<key>AAPL,current-available</key>
 				<data>
-				SU1FSQ==
+				AAg0
+				</data>
+				<key>AAPL,current-extra</key>
+				<data>
+				AAqM
+				</data>
+				<key>AAPL,current-extra-in-sleep</key>
+				<data>
+				AAg0
+				</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>
+				AAPo
+				</data>
+				<key>AAPL,device-internal</key>
+				<data>
+				AAI=
+				</data>
+				<key>AAPL,max-port-current-in-sleep</key>
+				<data>
+				AAqM
 				</data>
 				<key>AAPL,slot-name</key>
 				<string>Built In</string>
@@ -615,10 +650,20 @@
 				<data>
 				AA==
 				</data>
+				<key>device-id</key>
+				<data>
+				nLEAAA==
+				</data>
 				<key>device_type</key>
-				<string>USB Device</string>
+				<string>USB Controller</string>
 				<key>model</key>
-				<string>Apple MacBook Pro USB Controller (Intel Wildcat Point-LP XHC USB Controller)</string>
+				<string>Intel 9 Series Chipset Family Wildcat Point-LP USB 3.1 xHCI Controller</string>
+				<key>name</key>
+				<string>XHC</string>
+				<key>vendor-id</key>
+				<data>
+				gIYAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
@@ -629,87 +674,290 @@
 				AA==
 				</data>
 				<key>device_type</key>
-				<string>ISA Bridge</string>
+				<string>Communication Controller</string>
 				<key>model</key>
-				<string>MacBook Pro IMEI Controller (Intel Wildcat Point-LP MEI Controller)</string>
+				<string>Intel Broadwell Wildcat Point-LP MEI Controller</string>
+				<key>name</key>
+				<string>IMEI</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>Intel Gigabit Local Area Network Ethernet Connection (3) I218-LM</string>
+				<key>name</key>
+				<string>GIGE</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>PinConfigurations</key>
+				<string>Internal</string>
+				<key>built-in</key>
 				<data>
-				</data>
-				<key>codec-id</key>
-				<data>
-				kgLsEA==
+				AA==
 				</data>
 				<key>device_type</key>
 				<string>Audio Device</string>
 				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>layout-id</key>
 				<data>
 				HAAAAA==
 				</data>
 				<key>model</key>
-				<string>Realtek ALC3232 High Definition Audio (Intel Broadwell Wildcat Point-LP HD Audio Controller)</string>
+				<string>Realtek High Definition Audio Controller (Intel Broadwell-U Wildcat Point-LP Audio)</string>
+				<key>name</key>
+				<string>HDEF</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #6</string>
+				<key>name</key>
+				<string>RP01</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@2,0,0</string>
+				<key>device_type</key>
+				<string>Card Reader</string>
+				<key>model</key>
+				<string>Realtek RTS5227 PCI Express Card Reader</string>
+				<key>name</key>
+				<string>SDXC</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #3</string>
+				<key>name</key>
+				<string>RP02</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>NGFF A/E Port</string>
+				<key>device_type</key>
+				<string>AirPort Controller</string>
+				<key>model</key>
+				<string>Apple AirPort Extreme Broadcom BCM4360 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>ARPT</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>
+				AAg0
+				</data>
+				<key>AAPL,current-extra</key>
+				<data>
+				AAqM
+				</data>
+				<key>AAPL,current-extra-in-sleep</key>
+				<data>
+				AAg0
+				</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>
+				AAPo
+				</data>
+				<key>AAPL,device-internal</key>
+				<data>
+				AAI=
+				</data>
+				<key>AAPL,max-port-current-in-sleep</key>
+				<data>
+				AAqM
+				</data>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device-id</key>
+				<data>
+				ppwAAA==
+				</data>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Intel 9 Series Chipset Family Wildcat Point-LP Enhanced USB 2.0 EHCI Controller</string>
+				<key>name</key>
+				<string>EH01</string>
+				<key>vendor-id</key>
+				<data>
+				gIYAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal</string>
 				<key>built-in</key>
 				<data>
 				AA==
 				</data>
 				<key>device_type</key>
-				<string>LPC Bus</string>
+				<string>ISA Bridge</string>
 				<key>model</key>
-				<string>AppleLPC Controller (Intel Wildcat Point-LP LPC Controller)</string>
+				<string>Intel Broadwell Wildcat Point-LP LPC Controller (Low Pin Count Bus)</string>
+				<key>name</key>
+				<string>LPC</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device_type</key>
+				<string>SATA Controller</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP SATA Controller [AHCI Mode]</string>
+				<key>name</key>
+				<string>SATA</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal</string>
 				<key>built-in</key>
 				<data>
 				AA==
 				</data>
 				<key>device_type</key>
-				<string>SMBus Controller</string>
+				<string>System Bus</string>
 				<key>model</key>
-				<string>Apple MacBook Pro SMBus Controller (Intel Broadwel Wildcat Point-LP SMBus Controller)</string>
+				<string>Intel Wildcat Point-LP SMBus Controller</string>
+				<key>name</key>
+				<string>SMBU</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x6)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>built-in</key>
+				<data>
+				AA==
+				</data>
+				<key>device_type</key>
+				<string>Signal Processing Controller</string>
+				<key>model</key>
+				<string>Wildcat Point-LP Thermal Management Controller</string>
+				<key>name</key>
+				<string>THRM</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,GfxYTile</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				BgAmFg==
+				</data>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal</string>
 				<key>built-in</key>
 				<data>
 				AA==
 				</data>
 				<key>device_type</key>
-				<string>Graphics Controller</string>
-				<key>ig-platform-id</key>
+				<string>VGA Compatible Controller</string>
+				<key>disable-external-gpu</key>
 				<data>
-				BgAmFg==
+				AQAAAA==
 				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
-				<string>Intel HD Graphics 5500</string>
+				<string>HD Graphics 5500</string>
+				<key>name</key>
+				<string>IGPU</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal</string>
 				<key>built-in</key>
 				<data>
 				AA==
 				</data>
 				<key>device_type</key>
 				<string>Audio Device</string>
+				<key>layout-id</key>
+				<data>
+				HAAAAA==
+				</data>
 				<key>model</key>
-				<string>Intel HDMI/Mini Display Controller (Intel Wildcat Point-LP HDMI Controller)</string>
+				<string>Intel Broadwell-U HDMI Audio Controller</string>
+				<key>name</key>
+				<string>HDAU</string>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -723,7 +971,7 @@
 			<key>Inject</key>
 			<true/>
 			<key>NameEH00</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -801,16 +1049,7 @@
 		<key>PlayAsync</key>
 		<false/>
 		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<true/>
-			<key>Linux</key>
-			<true/>
-			<key>Tool</key>
-			<true/>
-		</dict>
+		<true/>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
@@ -875,12 +1114,14 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<true/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelLapic</key>
-		<false/>
+		<true/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
@@ -1057,37 +1298,6 @@
 		<string>Apple Inc.</string>
 		<key>Memory</key>
 		<dict>
-			<key>Modules</key>
-			<array>
-				<dict>
-					<key>Frequency</key>
-					<integer>1600</integer>
-					<key>Part</key>
-					<string>CT102464BF160B.M16FP</string>
-					<key>Size</key>
-					<integer>8192</integer>
-					<key>Slot</key>
-					<integer>0</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Crucial</string>
-				</dict>
-				<dict>
-					<key>Frequency</key>
-					<integer>1600</integer>
-					<key>Part</key>
-					<string>CT102464BF160B.M16FP</string>
-					<key>Size</key>
-					<integer>8192</integer>
-					<key>Slot</key>
-					<integer>1</integer>
-					<key>Type</key>
-					<string>DDR3</string>
-					<key>Vendor</key>
-					<string>Crucial</string>
-				</dict>
-			</array>
 			<key>SlotCount</key>
 			<integer>2</integer>
 		</dict>
@@ -1108,6 +1318,8 @@
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

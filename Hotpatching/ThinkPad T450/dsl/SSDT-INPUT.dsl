@@ -38,9 +38,8 @@ DefinitionBlock("", "SSDT", 1, "LENOVO", "TP-INPUT", 0)                         
 {
     // CHOOSE THE PROPER DEVICES BASED ON YOUR PREFERED SETTINGS. WITH THIS CONFIGURATION BOTH TRACKPAD AND KEBOARD WILL BE ON DEVICE KBD_ AS A SINGLE HARDWARE ENTITY
     External (_SB.PCI0.LPC.EC, DeviceObj)   // ***
-    External (_SB.PCI0.LPC.KBD, DeviceObj)  // ***
-    //External (_SB.PCI0.LPC.MOU, DeviceObj)   
-    //External (_SB.PCI0.LPC.PS2K, DeviceObj)    
+    External (_SB.PCI0.LPC.KBD, DeviceObj)  // ***  
+    External (_SB.PCI0.LPC.PS2K, DeviceObj)    
     
     Scope (_SB.PCI0.LPC.EC)  // DONT CHANGE THIS SCOPE! ONLY THE ONE FOR THE TRACKPAD
     {
@@ -101,8 +100,7 @@ DefinitionBlock("", "SSDT", 1, "LENOVO", "TP-INPUT", 0)                         
     }
     // Select the desired device for the TracPad to be assigned to depending on your system
     
-    Scope(_SB.PCI0.LPC.KBD)   // TrackPad ON KBD_  // *** ACTIVE 
-    //Scope (_SB.PCI0.LPC.MOU)   
+    Scope(_SB.PCI0.LPC.KBD)   // TrackPad ON KBD_  // *** ACTIVE   
     //Scope(_SB.PCI0.LPC.PS2K)  // TrackPad ON PS2K
     {
         // Select specific configuration in VoodooPS2Trackpad.kext
