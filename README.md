@@ -1,4 +1,4 @@
-![Screenshot](Utilities/Misc/logo/screenshot.png)
+![Screenshot](Utilities/Tools/Logo/screenshot.png)
 
 #
 # Lenovo-T450-Hackintosh-Tools
