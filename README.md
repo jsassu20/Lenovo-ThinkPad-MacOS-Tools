@@ -29,7 +29,7 @@ Notable Applications:
 #
 # Audio Configuration
 
-Everything needed to create a patched AppleHDA kext which controls system sound. This is the Codec configuration that the T450 uses. This kext will provide you with a perfectly configured sound setup with Microphone and AUX working. You can use AppleALC as an alternative but I found that Mic and Aux usage is terrible with this method in Mojave so I use this now. I got it from TonyMacX86 from a guy who did the Lenovo L440 configuration I believe his name is Snider or something like that. All credit goes to him for this.
+Everything needed to create a patched AppleHDA kext which controls system sound. This is the Codec configuration that the T450 uses. This kext will provide you with a perfectly configured sound setup with Microphone and AUX working.
 
 Also includes AppleALC.kext file with a modification made for proper support on ALC3232 based configurations (fixes bad mic).
 
