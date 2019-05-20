@@ -77,38 +77,29 @@ My T450 Static patch method. This should only be used with T450s and may not wor
 #
 # Users Who've Installed The T440 TrackPad
 
-Added TouchPad files for those users who have chosen to install the Lenovo T440 TrackPad which is the Synaptic UltraNav One Button ClickPad. 
+For people who have installed the Lenovo T440 TrackPad Synaptic UltraNav ClickPad...
 
-Files can be found in: 
+Files can be found in:
+* "TrackPad/T440_One_Button_ClickPad/"
 
-* "T440 Trackpad" folder
+Run my ".command" located in:
+* "TrackPad/T440_One_Button_ClickPad"  
 
-
-Be sure to do the following:
-
-Run my ".command" located in "T440\ TrackPad/" folder and all required changes will be made automatically. 
-
-*** (MAKE SURE EFI PARTITION THAT CONTAINS CLOVER IS MOUNTED BEFORE RUNNING MY ".command" FILE) ***
-
-If the .command script doesn't work then do the following:
+*** If the .command script doesn't work ***
 
 Replace the SSDT-VPS2.aml file in:
-
 * "/Volumes/ESP/EFI/CLOVER/ACPI/patched/"
 
-with SSDT-ASTP.aml file in: 
+with SSDT-ASTP.aml file in:
+* "TrackPad/T440_One_Button_ClickPad/"
 
-* "T440 TrackPad" folder
-
-Replace VoodooPS2controller.kext in the following 3 folders: 
-
+Replace VoodooPS2controller.kext in the following 3 folders:
 * "/Library/Extensions/" *** (if you installed it there or ran my script to install system kexts) ***
 * "/Volumes/ESP/EFI/CLOVER/kexts/Other/"
 * "/Volumes/ESP/EFI/CLOVER/kexts/System/" 
 
-with ApplePS2SmartTouchpad.kext that can be found in: 
-
-* "T440 TrackPad" folder
+with ApplePS2SmartTouchpad.kext that can be found in:
+* "TrackPad/T440_One_Button_ClickPad/"
 
 #
 # Utilities 
