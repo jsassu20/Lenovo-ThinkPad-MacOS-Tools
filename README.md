@@ -98,7 +98,7 @@ Replace the SSDT-VPS2.aml file in:
 
 with SSDT-ASTP.aml file in: 
 
-* "T440 TrackPad/ACPI/" folder
+* "T440 TrackPad" folder
 
 Replace VoodooPS2controller.kext in the following 3 folders: 
 
@@ -108,7 +108,7 @@ Replace VoodooPS2controller.kext in the following 3 folders:
 
 with ApplePS2SmartTouchpad.kext that can be found in: 
 
-* "T440 TrackPad/Kext/" folder
+* "T440 TrackPad" folder
 
 #
 # Utilities 
