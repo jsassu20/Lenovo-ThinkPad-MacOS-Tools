@@ -77,29 +77,27 @@ My T450 Static patch method. This should only be used with T450s and may not wor
 #
 # Users Who've Installed The T440 TrackPad
 
-For people who have installed the Lenovo T440 TrackPad Synaptic UltraNav ClickPad...
+I've included a folder that contains the files necessary for implementing my preferred trackpad configuration after installing the Synaptic One Button Clickpad in my Lenovo ThinkPad T450. I don't recommend using these files unless you have installed the T440 trackpad as well. The configuration can be found at "/Volumes/ESP/EFI/CLOVER/utilities/Trackpad/T440-Clickpad/"
 
-Files can be found in:
-* "TrackPad/T440_One_Button_ClickPad/"
+### Instructions:
 
-Run my ".command" located in:
-* "TrackPad/T440_One_Button_ClickPad"  
+```
+1. Run my ".command" file to make changes automatically. 
+```
 
-*** If the .command script doesn't work ***
+### Manual Install:
 
-Replace the SSDT-VPS2.aml file in:
-* "/Volumes/ESP/EFI/CLOVER/ACPI/patched/"
+```
+1. Replace the SSDT-VPS2.aml in the folder listed below with SSDT-ASTP.aml.
+   - "/Volumes/ESP/EFI/CLOVER/ACPI/patched/"
 
-with SSDT-ASTP.aml file in:
-* "TrackPad/T440_One_Button_ClickPad/"
+2. Replace VoodooPS2controller.kext in the following 3 folders listed below with ApplePS2SmartTouchpad.kext.
+   - "/Library/Extensions/"
+   - "/Volumes/ESP/EFI/CLOVER/kexts/Other/"
+   - "/Volumes/ESP/EFI/CLOVER/kexts/System/" 
 
-Replace VoodooPS2controller.kext in the following 3 folders:
-* "/Library/Extensions/" *** (if you installed it there or ran my script to install system kexts) ***
-* "/Volumes/ESP/EFI/CLOVER/kexts/Other/"
-* "/Volumes/ESP/EFI/CLOVER/kexts/System/" 
-
-with ApplePS2SmartTouchpad.kext that can be found in:
-* "TrackPad/T440_One_Button_ClickPad/"
+3. Run the !kextcache.command script (requires admin password).
+```
 
 #
 # Utilities 
