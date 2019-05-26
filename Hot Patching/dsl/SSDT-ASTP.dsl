@@ -1,10 +1,10 @@
-// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave) | Build By: Jsassu20 (James Sassu)...
-//                                    
+// Lenovo ThinkPad T450 Ultrabook | Hackintosh Build (macOS Mojave)
+//
 // Clover UEFI Hotpatch | SSDT-APS2...
 // 
 // Keyboard Brightness Keys Definition | Designed to work with ApplePS2SmartTouchPad.kext.kext...
 //
-DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-APS2", 0)
+DefinitionBlock("", "SSDT", 2, "LENOVO", "TP-ASTP", 0)
 {
     External (_SB.PCI0.LPC.EC, DeviceObj)
     External (_SB.PCI0.LPC.KBD, DeviceObj)
