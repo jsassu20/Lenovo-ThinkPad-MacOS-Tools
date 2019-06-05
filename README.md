@@ -9,6 +9,9 @@ This folder contains a number of different useful tools I find helpful with sett
 
   - Contains 2 separate methods for successfully getting proper system audio functionality with with this configuration. (Credit JCSNIDER for ALC3232 Method and ACIDANTHERA for AppleALC Lilu Plugin)
 
+- ### BIOS Folder
+
+  - Contains pictures which show the proper BIOS settings required for the system to boot properly. Anything that show "Permanently Disabled" as an option can be substituted by the "Disable" action instead if you would rather have the option to utilize the features down the road.
 
 - ### Guides
 
