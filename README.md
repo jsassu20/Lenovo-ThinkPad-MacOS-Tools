@@ -4,6 +4,9 @@
 
 This folder contains a number of different useful tools I find helpful with setting up the full macOS system on the Lenovo ThinkPad T450 Ultrabook. You may not find them useful but they're here for anyone to checkout and use if they want.
 
+- ### AirPort Windows Drivers
+
+  - Contains the required drivers needed for using the Broadcom BCM94360CSAX (also BCM94360CS and BCM94360CS2) AirPort Extreme wireless network card and Bluetooth 4.0 LE PCIe card in Windows 7-10 operating systems. This allows dual booting and being able to use the actual Apple AirPort Extreme card.
 
 - ### Audio Configuration
 
